@@ -24,7 +24,7 @@ export function Topbar({ usuario, onLogout, onToggleMobileSidebar }: TopbarProps
         <div className="topbar-breadcrumb">
           <span className="topbar-system-name">Chuno Banca</span>
           <span className="topbar-divider">/</span>
-          <span className="topbar-section-name">Gestión Humana</span>
+          <span className="topbar-section-name">Banca por Internet</span>
         </div>
       </div>
 
