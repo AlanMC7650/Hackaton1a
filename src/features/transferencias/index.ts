@@ -1,0 +1,1 @@
+export { TransferenciasPage } from './TransferenciasPage'
