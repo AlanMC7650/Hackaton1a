@@ -28,33 +28,40 @@ interface StatusBadgeProps {
 }
 
 const STATUS_CONFIG: Record<string, { label: string; variant: BadgeVariant }> = {
-  // Roles de usuario
+  // Roles
   ADMIN: { label: 'Admin', variant: 'brand' },
-  RRHH: { label: 'RRHH', variant: 'brand' },
-  DIRECCION: { label: 'Dirección', variant: 'info' },
-  FUNCIONARIO: { label: 'Funcionario', variant: 'neutral' },
+  CLIENTE: { label: 'Cliente', variant: 'info' },
 
-  // Estados de funcionario
-  EN_PRUEBA: { label: 'En prueba', variant: 'warning' },
-  RATIFICADO: { label: 'Ratificado', variant: 'success' },
+  // Clientes
+  ACTIVO: { label: 'Activo', variant: 'success' },
   BAJA: { label: 'Baja', variant: 'danger' },
 
-  // Estados de vacaciones
+  // Cuentas
+  ACTIVA: { label: 'Activa', variant: 'success' },
+  CERRADA: { label: 'Cerrada', variant: 'neutral' },
+
+  // Movimientos
+  CREDITO: { label: 'Crédito', variant: 'success' },
+  DEBITO: { label: 'Débito', variant: 'warning' },
+
+  // Pagos
   PENDIENTE: { label: 'Pendiente', variant: 'warning' },
-  APROBADA: { label: 'Aprobada', variant: 'success' },
+  COMPLETADO: { label: 'Completado', variant: 'success' },
+  RECHAZADO: { label: 'Rechazado', variant: 'danger' },
+  REVERTIDO: { label: 'Revertido', variant: 'warning' },
+
+  // Transferencias
+  PROPIA: { label: 'Propia', variant: 'info' },
+  TERCERO: { label: 'Tercero', variant: 'brand' },
+  INTERBANCARIA: { label: 'Interbancaria', variant: 'neutral' },
+  COMPLETADA: { label: 'Completada', variant: 'success' },
   RECHAZADA: { label: 'Rechazada', variant: 'danger' },
+  REVERTIDA: { label: 'Revertida', variant: 'warning' },
 
-  // Estados de boletas / contratos
-  BORRADOR: { label: 'Borrador', variant: 'neutral' },
-  EMITIDA: { label: 'Emitida', variant: 'success' },
-  RECTIFICADA: { label: 'Rectificada', variant: 'warning' },
-  PAGADA: { label: 'Pagada', variant: 'info' },
-  ACTIVO: { label: 'Activo', variant: 'success' },
-  INACTIVO: { label: 'Inactivo', variant: 'danger' },
-
-  // Tipos de contrato
-  INDEFINIDO: { label: 'Indefinido', variant: 'brand' },
-  PLAZO_FIJO: { label: 'Plazo Fijo', variant: 'info' },
+  // Préstamos
+  SOLICITADO: { label: 'Solicitado', variant: 'warning' },
+  APROBADO: { label: 'Aprobado', variant: 'success' },
+  CANCELADO: { label: 'Cancelado', variant: 'neutral' },
 }
 
 export function StatusBadge({ status, size = 'sm', className = '' }: StatusBadgeProps) {

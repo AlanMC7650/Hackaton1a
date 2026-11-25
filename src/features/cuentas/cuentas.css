@@ -1,0 +1,64 @@
+.cuentas-page {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.cuentas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+  gap: 1rem;
+}
+
+.cuentas-filtro,
+.cuentas-acciones,
+.cuentas-form-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cuentas-filtro {
+  align-items: end;
+}
+
+.cuentas-filtro > .form-group-ds {
+  width: min(100%, 23rem);
+  margin-bottom: 0;
+}
+
+.cuentas-saldo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.4rem 0.55rem;
+  color: var(--text-secondary);
+}
+
+.cuentas-saldo strong {
+  grid-column: 1 / -1;
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.cuentas-titular,
+.cuentas-contexto,
+.cuentas-movimiento-glosa {
+  color: var(--text-secondary);
+  overflow-wrap: anywhere;
+}
+
+.cuentas-contexto,
+.cuentas-movimiento-glosa {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.cuentas-acciones,
+.cuentas-form-acciones {
+  margin-top: 1rem;
+}
+
+.cuentas-form-acciones {
+  justify-content: flex-end;
+}
